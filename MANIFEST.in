@@ -1,0 +1,18 @@
+include MANIFEST.in
+include requirements.txt
+include *.json
+include *.md
+include *.py
+include *.txt
+recursive-include merafleet *.css
+recursive-include merafleet *.csv
+recursive-include merafleet *.html
+recursive-include merafleet *.ico
+recursive-include merafleet *.js
+recursive-include merafleet *.json
+recursive-include merafleet *.md
+recursive-include merafleet *.png
+recursive-include merafleet *.py
+recursive-include merafleet *.svg
+recursive-include merafleet *.txt
+recursive-exclude merafleet *.pyc
