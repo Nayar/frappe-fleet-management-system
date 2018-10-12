@@ -3,8 +3,8 @@ from base64 import b64encode
 import json
 
 class Settings:
-  traccar_server='vps5.nayarweb.com:8082'
-  erpnext_server='vps5.nayarweb.com:8000'
+  traccar_server='10.65.35.27:8082'
+  erpnext_server='10.65.35.117:8000'
   traccar_auth_header={ 'Authorization' : 'Basic %s' % (b64encode(b"admin:admin").decode("ascii")) }
   erpnext_headers = False
   
