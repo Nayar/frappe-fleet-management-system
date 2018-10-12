@@ -65,7 +65,7 @@ class Vehicle:
         print(vehicle['name'] + ' needs sync to traccar')
         conn = http.client.HTTPConnection(Settings.traccar_server)
         Settings.traccar_auth_header['Content-type'] = 'application/json'
-        conn.request("POST", "/api/devices",headers=Settings.traccar_auth_header,body='{"uniqueId": "%s", "name" : "%s", "groupId" : 1}' % (vehicle['name'],vehicle['name']))
+        conn.request("POST", "/api/devices",headers=Settings.traccar_auth_header,body='{"uniqueId": "%s", "name" : "%s", "groupId" : 2}' % (vehicle['name'],vehicle['name']))
         r1 = conn.getresponse()
         body = r1.read().decode('UTF-8')
         print(body) 
